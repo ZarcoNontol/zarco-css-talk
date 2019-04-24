@@ -9,14 +9,23 @@ body {
 }
 
 .container {
-  width: 1230px;
   max-width: 100%;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .mt-0 {
   margin-top: 0;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
 }
 
 .mb-0 {
@@ -24,6 +33,30 @@ body {
 }
 
 /* END -- General */
+
+/* Typography */
+/* 20px */
+.fs-l {
+  font-size: 20px;
+}
+/* 16px */
+.fs-m {
+  font-size: 16px;
+}
+/* 14px */
+.fs-s {
+  font-size: 14px;
+}
+/* 12px */
+.fs-xs {
+  font-size: 12px;
+}
+/* 10px */
+.fs-xxs {
+  font-size: 10px;
+}
+
+/* END -- Typography */
 
 /* Top Nav */
 .top-nav {
@@ -104,14 +137,14 @@ body {
 }
 
 .dd-list__item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 90px) / 4);
   min-height: 280px;
-  background-color: #F4774F;
+  /* background-color: #F4774F; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.dd-list__item:nth-child(3n) {
+.dd-list__item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -119,4 +152,107 @@ footer {
   background-color: #fafafa;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.bullet {
+  display: flex;
+}
+
+.bullet__asset {
+  width: 55px;
+}
+
+.bullet__content {
+  width: calc(100% - 55px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dd-card__body {
+  position: relative;
+}
+
+.dd-card__labels {
+  position: absolute;
+}
+
+.dd-card__top-left-info {
+  top: 0;
+  left: 0;
+  width: 105px;
+  height: 105px;
+  background-color: green;
+}
+
+.dd-card__footer {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dd-card__title {
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dd-card__image {
+  padding-bottom: calc(9/16*100%);
+  background-color: blue;
+  background-image: url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.dd-card__footer {
+  position: relative;
+}
+
+.dd-card__actions {
+  top: 5px;
+  right: 5px;
+  background-color: #cccc;
+  padding: 5px;
+}
+
+.dd-card__bottom-right-info {
+  right: 5px;
+  bottom: 5px;
+  background-color: #fafafa;
+  padding: 5px;
+}
+
+.dd-card__avatar {
+  width: 100%;
+  height: 55px;
+  margin-top: calc(-55px / 2);
+  background-color: yellow;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.dd-card__reviews {
+  text-align: center;
+}
+
+.dd-card__footer-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.stars {
+  text-align: center;
+}
+
+.stars__item {
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.stars__item:last-child {
+  margin-right: 0;
 }
